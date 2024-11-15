@@ -15,7 +15,7 @@ class _SplashscreenState extends State<Splashscreen> {
     super.initState();
 
     //menunda sebanyak 3 detik untuk menampilkan Splashscreen sebelum berpindah halaman
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 300), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const LandingPage()),
@@ -33,7 +33,7 @@ class _SplashscreenState extends State<Splashscreen> {
           children: [
             // Lottie Animation, pastikan URL valid atau pakai animasi lokal
             Lottie.network(
-              'https://lottie.host/956e1e4f-8c98-4206-ae82-50dd50161d69/dtw01aXDDE.json',
+              'https://lottie.host/38b29cb1-4dfa-46c0-a48d-54ccd0ebc9bc/ftJieCnFxA.json',
               width: 350,
               height: 350,
               fit: BoxFit.cover,
@@ -42,7 +42,8 @@ class _SplashscreenState extends State<Splashscreen> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 // SizedBox to create vertical spacing
-                SizedBox(height: 300), // This creates a vertical space of 300 pixels
+                SizedBox(
+                    height: 300), // This creates a vertical space of 300 pixels
                 Text(
                   "RIZAL RINALDI",
                   style: TextStyle(

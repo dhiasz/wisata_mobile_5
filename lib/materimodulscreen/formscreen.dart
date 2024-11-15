@@ -37,6 +37,14 @@ class _FormscreenState extends State<Formscreen> {
               controller: textEditingController,
               decoration: InputDecoration(
                 labelText: 'Masukan Nama',
+                border: OutlineInputBorder(), // This makes it rectangular
+                // Optionally add more styling like padding or focused border
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.blue, width: 2),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.grey, width: 1),
+                ),
               ),
             ),
             SizedBox(height: 20),
